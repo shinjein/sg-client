@@ -1,16 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
+import GoogleMapReact from "google-map-react";
+import  mapStyles  from "./mapStyles";
 import "./map.scss";
+import Pin from "./assets/location-icon.png"
 
+const AnyReactComponent = ({Pin}) => (
+  <div>
+    <img className="pin"
+      src={Pin}
+      alt="pin"
+    />
+  </div>
+);
 
-const Map = () => {
+class MapContainer extends Component {
+  static defaultProps = {
+    center: {
+      lat: 38.736946,
+      lng: -9.142685,
+    },
+    zoom: 13,
+  };
 
+ render() {
+   return (
+     <div className="map-display">
+      <GoogleMapReact
+            bootstrapURLKeys={{ 
+              key: 'AIzaSyBxYekrFbbgynY0AuLLJwVuzsuWtncCGrM',
+            }}
+            defaultCenter={this.props.center}
+            defaultZoom={this.props.zoom}
+            options={{
+              styles: mapStyles.styles
+            }}
+            >
+            <AnyReactComponent
+              lat={51.5124449}
+              lng={-0.1270106}
+            />
+        </GoogleMapReact >
+      </div>      
+  )
+ }
+} 
 
-
-  return (
-    <div className="map-layout">
-map
-    </div>
-  );
-}
-
-export default Map;
+export default MapContainer;
