@@ -1,0 +1,19 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    align-items: baseline;
+    top: 0;
+    z-index: 1000;
+}
+
+.ul-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: sticky;
+}
+li {
+    padding-right: 3rem;
+}

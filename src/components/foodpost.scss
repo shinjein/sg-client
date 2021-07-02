@@ -1,0 +1,77 @@
+.first-post{
+  width: 530px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.second-post{
+  width: 825px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.random-text {
+  margin-left: 15px;
+  width: 250px;
+  height: 250px;
+
+  p {
+    text-align: left;
+    font-size: smaller;
+    margin-top: 30%;
+  }
+}
+  .third-post{
+    width: 700px;
+  }
+.food-card-img {
+  width: 250px;
+  height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.068) 0px 20px 30px;
+
+
+}
+.food-img {
+  margin-top: 15px;
+  width: 220px;
+  height: 220px;
+}
+
+.food-card-txt {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.068) 0px 20px 30px;
+
+  h3 {
+      padding-left: 20px;
+    padding-right: 20px;
+  }
+  p {
+    margin-bottom:auto;
+    font-size: smaller;
+      padding-left: 30px;
+  padding-right: 30px;
+  }
+}
+
+.food-card{
+  display: flex;
+  flex-direction: row;  
+}
+.first-post{
+    margin-left: 50%;
+}
+.second-post{
+    margin-left: 10%;
+}
+.third-post{
+  margin-left: 50%
+}

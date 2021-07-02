@@ -1,0 +1,21 @@
+.community-layout {
+  height: 1080px;
+  background: white;
+}
+
+.community-header {
+  margin-top: 5%;
+  margin-right: 25%;
+}
+//foodposts
+.first-section {
+
+   &:after {
+    content: "";
+    position: absolute;
+    height: 400px;
+    bottom: 0;
+    left: 0;
+    // opacity: 0;
+  }
+}
