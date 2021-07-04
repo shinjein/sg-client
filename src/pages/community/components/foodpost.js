@@ -1,5 +1,5 @@
 import React from "react";
-import "./foodpost.scss"
+import "./styles.scss"
 
 const FirstCard = ({picture}) => {
   return(

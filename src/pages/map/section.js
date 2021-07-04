@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import GoogleMapReact from "google-map-react";
-import  mapStyles  from "./mapStyles";
-import "./map.scss";
+import mapStyles from "./mapStyles";
+import img from "./assets/maptitle.png"
+import pin from "./assets/location-icon.png"
+import "./styles.scss";
 
-const AnyReactComponent = ({Pin}) => (
+const AnyReactComponent = () => (
   <div>
-    <img className="pin"
-      src={Pin}
+    <img className="pin-png"
+      src={pin}
       alt="pin"
     />
   </div>
@@ -24,7 +26,10 @@ class MapContainer extends Component {
  render() {
    return (
      <div className="map-display">
-      <GoogleMapReact
+        <img className="map-title-png" src={img} alt="map-title" />
+
+        <GoogleMapReact
+            className="google-map"
             bootstrapURLKeys={{ 
               key: 'AIzaSyBxYekrFbbgynY0AuLLJwVuzsuWtncCGrM',
             }}
@@ -38,6 +43,7 @@ class MapContainer extends Component {
               lat={51.5124449}
               lng={-0.1270106}
             />
+
         </GoogleMapReact >
       </div>      
   )

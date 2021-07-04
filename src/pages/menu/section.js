@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import "./menu.scss"
-import menuData from "../../data/menu-data"
+import menuData from "./data/menu-data"
+import menuTitle from "./assets/menu-title.png"
 
 const Menu = () => {
   const [scroll, setScroll] = useState('');
@@ -48,6 +49,7 @@ const Menu = () => {
 
 return(
     <section className="background-menu">
+    <img className="menu-title-png" src={menuTitle} alt="menu-title"/>
     <div className="column-grid" ref={ref}>
       <div className="menu-column starter-col" 
         style={{transform: `translateY(-${scroll}px)`}}>

@@ -21,6 +21,7 @@ $shadow-color: rgba(0, 0, 0, 0.068) 0px 20px 30px;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .random-text {
   margin-left: 15px;
   width: 250px;
@@ -32,14 +33,15 @@ $shadow-color: rgba(0, 0, 0, 0.068) 0px 20px 30px;
     margin-top: 30%;
   }
 }
-  .third-post {
+
+.third-post {
     width: 700px;
-  }
+}
+
 .food-card-img {
   width: 250px;
   height: 250px;
   box-shadow: $shadow-color
-
 
 }
 .food-img {
@@ -73,12 +75,15 @@ $shadow-color: rgba(0, 0, 0, 0.068) 0px 20px 30px;
   display: flex;
   flex-direction: row;  
 }
+
 .first-post{
     margin-left: 50%;
 }
+
 .second-post{
     margin-left: 10%;
 }
+
 .third-post{
   margin-left: 50%
 }

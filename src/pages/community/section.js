@@ -1,12 +1,12 @@
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import "./community.scss";
-import Title from "./assets/community-title.png"
-import { FirstCard, SecondCard, ThirdCard } from "../../components/FoodPost/foodpost"
-import picture01 from "./assets/picture01.png"
-import picture02 from "./assets/picture02.png"
-import picture03 from "./assets/picture02.png"
+import "./styles.scss";
+import Title from "./assets/title.png"
+import { FirstCard, SecondCard, ThirdCard } from "./components/foodpost"
+import picture01 from "./assets/pic01.png"
+import picture02 from "./assets/pic02.png"
+import picture03 from "./assets/pic03.png"
 
 
 const Community = () => {
