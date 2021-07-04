@@ -11,7 +11,7 @@ import picture03 from "./assets/picture02.png"
 
 const Community = () => {
   AOS.init({
-    duration: 1400,
+    duration: 1000,
   easing: 'ease-in-out-back'
   });
 

@@ -85,4 +85,8 @@ const styles =  [
     }
 ]
 
-export default { styles };
+const exportedStyles = {
+     styles
+};
+
+export default exportedStyles;

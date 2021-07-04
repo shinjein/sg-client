@@ -1,11 +1,11 @@
 import React from "react";
 import "./foodpost.scss"
 
-const FirstCard = (props) => {
+const FirstCard = ({picture}) => {
   return(
       <div className="first-post fadeIn">
         <section className="food-card-img first-img">
-          <img className="food-img" src={props.picture} alt="food-img"/>
+          <img className="food-img" src={picture} alt="food-img"/>
         </section> 
         <section className="food-card-txt">
         <h3>@first-card</h3>
@@ -18,7 +18,7 @@ const FirstCard = (props) => {
   );
 }
 
-const SecondCard = (props) => {
+const SecondCard = ({picture}) => {
   return(
     <div className="second-post fadeIn">
       <section className="food-card-txt">
@@ -28,7 +28,7 @@ const SecondCard = (props) => {
           </p>
       </section>
       <section className="food-card-img second-img">
-        <img className="food-img" src={props.picture} alt="food-img"/>
+        <img className="food-img" src={picture} alt="food-img"/>
       </section> 
       <section className="random-text">
         <p>
@@ -41,7 +41,7 @@ const SecondCard = (props) => {
   )
 }
 
-const ThirdCard = (props) => {
+const ThirdCard = ({picture}) => {
   return(
     <div className="food-card third-post fadeIn">
       <section className="food-card-txt">
@@ -52,7 +52,7 @@ const ThirdCard = (props) => {
           </p>
       </section>
       <section className="food-card-img second-img">
-        <img className="food-img" src={props.picture} alt="food-img"/>
+        <img className="food-img" src={picture} alt="food-img"/>
       </section> 
     </div>
   )

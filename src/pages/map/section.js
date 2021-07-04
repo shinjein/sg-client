@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import GoogleMapReact from "google-map-react";
 import  mapStyles  from "./mapStyles";
 import "./map.scss";
-import Pin from "./assets/location-icon.png"
 
 const AnyReactComponent = ({Pin}) => (
   <div>
