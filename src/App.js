@@ -1,7 +1,7 @@
 import React from "react";
 import './App.scss';
 import Header from "./pages/header/section";
-import Nav from "./components/navigation";
+import Nav from "./components/Nav/navigation"
 import Community from "./pages/community/section";
 import Map from "./pages/map/section";
 import Menu from "./pages/menu/section";
