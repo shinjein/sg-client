@@ -1,14 +1,14 @@
 import React from "react";
-import './styles.scss';
-import Text from'./assets/text.png';
+import "./styles.scss";
+import img from "./assets/text.png";
+import logo from "./assets/stamp.png";
 
 const Header = () => {
   return (
-    <>
     <section className="home">
-      <img className="big-text" src={Text} alt="title"/>
+      <img className="stamp rotate" src={logo} alt="logo"/>
+      <img className="big-text" src={img} alt="title"/>
     </section>
-    </>
   );
 }
 

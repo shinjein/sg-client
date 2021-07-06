@@ -1,21 +1,30 @@
-.community-layout {
-  height: 1080px;
-  background: white;
-}
+.community {
+  
+  &__layout {
+    height: 1080px;
+    background: white;
+  }
 
-.community-header {
-  margin-top: 5%;
-  margin-right: 25%;
-}
+  &__header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 35vw;
+  }
 
-.first-section {
-   &:after {
-    content: "";
+  &__title {
+    position: relative;
+    max-width: 266px; 
+    height: auto;
+  }  
+
+  &__btn {
+  position: relative;
+   max-width: 91px;
+   height: auto; 
+  }
+  &__sub {
     position: absolute;
-    height: 400px;
-    bottom: 0;
-    left: 0;
-    // opacity: 0;
+    margin-top: 20vh;
   }
 }
-

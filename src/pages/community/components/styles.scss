@@ -5,27 +5,73 @@ $shadow-color: rgba(0, 0, 0, 0.068) 0px 20px 30px;
   height: 250px;
 }
 
-.first-post{
-  width: 530px;
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
+@mixin card-content {
+  width: 220px;
+  height: 220px;
 }
 
-.second-post{
-  width: 825px;
+@mixin flexible {
   background-color: transparent;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+
+.post {
+
+  &__first {
+    margin-top: -9vh;
+    max-width: 50vw;
+    margin-left: 55vw;
+    @include flexible;
+
+    section {
+      margin-right: 2rem;
+    }
+
+  }
+  
+  &__second{
+    margin-top: 3vh;
+    width: 80vw;
+    margin-left: 10%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    section {
+      margin-right: 1rem;
+    }
+
+    article {
+      color: #333333;
+      margin-left: 3rem;
+      margin-top: 4rem;
+    }
+  }
+  
+  &__third {
+    margin: 0 auto;
+    width: 80vw;
+    justify-content: space-between;
+    @include flexible;
+
+    section {
+      margin-right: 1rem;  
+    }
+
+    article {
+      margin-top: 4rem;
+    }
+  }
 }
 
 .random-text {
+  font-family: 'Gill Sans';
+  font-size: 15px;
   margin-left: 15px;
-  width: 250px;
-  height: 250px;
+  margin-top: 6vh;
+  @include card-content;
 
   p {
     text-align: left;
@@ -34,56 +80,54 @@ $shadow-color: rgba(0, 0, 0, 0.068) 0px 20px 30px;
   }
 }
 
-.third-post {
-    width: 700px;
-}
+.card {
 
-.food-card-img {
-  width: 250px;
-  height: 250px;
-  box-shadow: $shadow-color
-
-}
-.food-img {
-  margin-top: 15px;
-  width: 220px;
-  height: 220px;
-}
-
-.food-card-txt {
-  width: 250px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: left;
-  box-shadow:$shadow-color
-
-  h3 {
-      padding-left: 20px;
-    padding-right: 20px;
+  &__txt {
+    @include card-dimension;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow:$shadow-color;
+  }  
+  
+  &__img {
+    @include card-dimension;
+    box-shadow: $shadow-color;
+    margin-left: 1rem;
   }
-  p {
-    margin-bottom:auto;
-    font-size: smaller;
-      padding-left: 30px;
+
+  &__custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+h3 {
+  margin-top: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 0;
+}
+    
+p {
+  font-family: 'Gill Sans';
+  margin-bottom:auto;
+  font-size: 0.8rem;
+  padding-left: 30px;
   padding-right: 30px;
-  }
+  color: #333333;
 }
 
-.food-card{
-  display: flex;
-  flex-direction: row;  
+.food-png {
+  margin: 15px;
+  @include card-content
 }
 
-.first-post{
-    margin-left: 50%;
+.ig-png {
+  position: absolute;
+  margin-left: 175px;
+  margin-top: 15px;
+  z-index:2;
 }
 
-.second-post{
-    margin-left: 10%;
-}
-
-.third-post{
-  margin-left: 50%
-}

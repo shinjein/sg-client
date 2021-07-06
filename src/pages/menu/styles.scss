@@ -1,0 +1,123 @@
+// .pages/Menu
+
+.background-menu {
+  background-color: #F8F8F8 ;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  height: 894px;
+}
+
+.menu-header {
+  position: absolute;
+  margin-top: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+
+  &__title {
+    width: 202px;
+  }
+
+  &__btn {
+    width: 101px;
+    height: 30px;
+  }
+}
+
+.col {
+
+  &__title {
+    font-family: 'Din Condensed';
+    font-size: 3.9rem;
+    margin-left: -8.5px;
+    line-height: 3rem;
+    color: #333333;
+  }
+
+  &__grid {
+    position: relative;
+    display: grid;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 20vh;
+    grid-template-columns: repeat(4, minmax(267px, 1fr));
+  }
+
+  &__starters {
+    border-right: 2px solid #CECECE;
+    padding-top: 171rem;
+    padding-bottom: 100rem;
+    background-color: #F8F8F8;
+    z-index: 3;
+  }   
+
+  &__mains {
+    margin-top: -229rem;
+    padding-top: 73rem;
+    padding-bottom: 60rem;
+    margin-left: -1.3vw;
+    border-right: 2px solid #CECECE;
+    background-color: #F8F8F8;
+    z-index: 2;
+  }
+
+  &__sides {
+    padding-top: 175rem;
+    padding-bottom: 100rem;
+    margin-left: -1.3vw;
+    border-right: 2px solid #CECECE;
+    background-color: #F8F8F8;
+    z-index: 1;
+  }
+
+  &__desserts {
+    margin-top: -173rem;
+    padding-top: 12.5rem;
+    padding-bottom: 62rem;
+        margin-left: -1.3vw;
+  }
+}
+
+.menu {
+  
+  &__div-list {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  &__p-name {
+    font-family: 'Din Condensed';
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #333333; 
+  }
+
+  &__p-describe {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: #767676;
+  }
+
+  &__p-price {
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid #FFDAC9;
+    width: 53px;
+    margin-left: 1.5rem;
+    margin-right: 3rem;
+  }
+}

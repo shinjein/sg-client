@@ -17,8 +17,8 @@ const AnyReactComponent = () => (
 class MapContainer extends Component {
   static defaultProps = {
     center: {
-      lat: 38.736946,
-      lng: -9.142685,
+        lat: 51.5124449,
+        lng: -0.1270106
     },
     zoom: 13,
   };

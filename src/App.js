@@ -1,10 +1,10 @@
 import React from "react";
-import './App.scss';
 import Header from "./pages/header/section";
 import Nav from "./components/Nav/navigation"
 import Community from "./pages/community/section";
 import Map from "./pages/map/section";
 import Menu from "./pages/menu/section";
+import Contact from "./pages/contact/section";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <Community />
       <Map />
       <Menu />
+      <Contact />
     </div>
   );
 }

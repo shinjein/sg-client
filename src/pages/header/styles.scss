@@ -1,16 +1,41 @@
+// .pages/Header
+
 .home {
   height: 100vh;
-  background: url('../header/assets/bg-pic.png') no-repeat scroll 100%;
-  direction: flex;
+  background: url('../header/assets/bg-pic.png') no-repeat center 0;
+  background-size: cover;
+  display: flex;
   justify-content: center;
   align-items: center;
   overflow: auto;
+  top: 0;
   background-color: #FFDAC9;
-
-  
 }
+
 .big-text {
   margin: 0 auto;
-  margin-top: 40vh;
   background-attachment: fixed;
+}
+
+.stamp {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  background-attachment: fixed;
+  max-width: 9rem;
+  height: auto;
+  margin-right: 200px;
+}
+
+.rotate {
+  animation: rotation 12s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

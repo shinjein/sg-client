@@ -1,19 +1,33 @@
-.navbar {
-    width: 100%;
+@mixin flex-baseline {
     display: flex;
+    align-items: baseline;
+}
+
+.navbar {
+    @include flex-baseline;
+    width: 100%;
     overflow: hidden;
     position: fixed;
-    align-items: baseline;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 18px;
     top: 0;
     z-index: 1000;
 }
 
 .ul-nav {
-    display: flex;
+    @include flex-baseline;
     flex-direction: row;
     list-style: none;
     position: sticky;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
+
 li {
-    padding-right: 3rem;
+    padding-right: 2rem;
+}
+
+.logo {
+    font-size: 28px;
 }
