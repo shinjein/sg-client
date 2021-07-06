@@ -1,5 +1,4 @@
-# sg-client
-assessment
+# UI assessment
 
 ## working demo
 https://sg-tm4gtch.herokuapp.com/
