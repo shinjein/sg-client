@@ -3,7 +3,7 @@
 ## working demo
 https://sg-tm4gtch.herokuapp.com/
 
-##technologies
+## technologies
 - react, react hooks, sass
 
 packages:
@@ -14,6 +14,6 @@ external:
 - adobe XD
 - pixelperfect by htmlhamburger (google extension)
 
-##test
+## tests
 
 please run App.test.js in test folder to run. 
