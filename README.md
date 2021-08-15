@@ -1,4 +1,5 @@
 # UI assessment
+as part of the junior front-end application for international digital product company with offices in London, New Delhi, Geneva, and Lisbon. Assesses candidates quality of code, technical ability, and attention to graphic details. 
 
 ## working demo
 https://sg-tm4gtch.herokuapp.com/
@@ -14,6 +15,6 @@ external:
 - adobe XD
 - pixelperfect by htmlhamburger (google extension)
 
-## tests
+## unit testing
 
-please run App.test.js in test folder to run. 
+run App.test.js in the test folder to run unit tests. 
